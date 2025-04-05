@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package db;
+
+option go_package = "api-db/gen";
+
+service DBWork {
+    rpc CreateTask (CreateRequest) returns (CreateResponse);
+    rpc DeleteTask (DeleteRequest) returns (DeleteResponse);
+    rpc DoneTask (DoneRequest) returns (DoneResponse);
+    rpc GetAllTask (GetAllRequest) returns (GetAllResponse);
+}
+message Task {
+    int64 id = 1;
+    string title = 2;
+    string description = 3;
+    bool done = 4;
+}
+message CreateRequest {
+    string title = 1;
+    string description = 2;
+}
+message CreateResponse {
+    int64 id = 1;
+    string reply = 2;
+}
+message DeleteRequest {
+    string title = 1;
+}
+message DeleteResponse {
+    string reply = 1;
+}
+message DoneRequest {
+    string title = 1;
+}
+message DoneResponse {
+    string reply = 1;
+}
+message GetAllRequest {}
+message GetAllResponse {
+    repeated Task tasks = 1;
+}
