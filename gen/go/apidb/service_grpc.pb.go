@@ -4,7 +4,7 @@
 // - protoc             v6.30.2
 // source: service.proto
 
-package gen
+package apidb
 
 import (
 	context "context"
