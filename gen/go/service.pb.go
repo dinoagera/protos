@@ -483,8 +483,7 @@ const file_service_proto_rawDesc = "" +
 	"DeleteTask\x12\x11.db.DeleteRequest\x1a\x12.db.DeleteResponse\x12-\n" +
 	"\bDoneTask\x12\x0f.db.DoneRequest\x1a\x10.db.DoneResponse\x123\n" +
 	"\n" +
-	"GetAllTask\x12\x11.db.GetAllRequest\x1a\x12.db.GetAllResponseB\fZ\n" +
-	"api-db/genb\x06proto3"
+	"GetAllTask\x12\x11.db.GetAllRequest\x1a\x12.db.GetAllResponseB!Z\x1fgithub.com/dinoagera/protos/genb\x06proto3"
 
 var (
 	file_service_proto_rawDescOnce sync.Once
